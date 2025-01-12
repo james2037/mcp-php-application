@@ -1,6 +1,6 @@
 # MCP PHP Application
 
-The **MCP PHP Application** is a stub application designed to work with the [MCP PHP Server framework](https://github.com/james2037/mcp-php-server). It serves as a starting point for users implementing the Model Context Protocol (MCP) in their projects.
+The **MCP PHP Application** is a stub application designed to work with the [MCP PHP Server framework](https://github.com/james2037/mcp-php-server). It serves as a starting point for users implementing the [Model Context Protocol](https://modelcontextprotocol.io/) (MCP) in their projects.
 
 ## Prerequisites
 
