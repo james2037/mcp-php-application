@@ -8,8 +8,11 @@ use MCP\Server\Resource\ResourceRegistry;
 use MCP\Server\Capability\ToolsCapability;
 use MCP\Server\Capability\ResourcesCapability;
 
+// Load server configuration
+$config = require __DIR__ . '/config/server.php';
+
 // Create server instance
-$server = new Server('my-tool-server', '1.0.0');
+$server = new Server($config['name'], $config['version']);
 
 // Set up signal handling
 if (function_exists('pcntl_signal')) {
