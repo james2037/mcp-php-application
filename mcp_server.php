@@ -28,7 +28,7 @@ if (function_exists('pcntl_signal')) {
 
 // Discover and register tools
 $toolRegistry = new ToolRegistry();
-$toolRegistry->discover(__DIR__ . '/tools');
+$toolRegistry->discover(__DIR__ . '/tools', $config);
 
 $toolsCapability = new ToolsCapability();
 foreach ($toolRegistry->getTools() as $tool) {
@@ -38,7 +38,7 @@ $server->addCapability($toolsCapability);
 
 // Discover and register resources
 $resourceRegistry = new ResourceRegistry();
-$resourceRegistry->discover(__DIR__ . '/resources');
+$resourceRegistry->discover(__DIR__ . '/resources', $config);
 
 $resourcesCapability = new ResourcesCapability();
 foreach ($resourceRegistry->getResources() as $resource) {
